@@ -1,6 +1,6 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0929/144611_f359aba0_8162876.png" width="590" height="212"/></div>
 
-### 项目说明（如果对你有用，请给个star！）
+### 项目说明（ 如果对你有用，请给个star！）
 ##### <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo_ios/2484021">项目文档</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo_ios/2484022">部署文档</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekeji/wanyue_open_zhibo_ios/2484025">常见问题</a> 
 
 ---
