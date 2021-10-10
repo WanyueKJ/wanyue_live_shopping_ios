@@ -1,0 +1,159 @@
+//
+//  YBEducationPrefixHeader.pch
+//  YBEducation
+//
+//  Created by IOS1 on 2020/2/27.
+//  Copyright © 2020 IOS1. All rights reserved.
+//
+
+#ifndef YBEducationPrefixHeader_pch
+#define YBEducationPrefixHeader_pch
+#ifdef __OBJC__
+
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "WYToolClass.h"
+#import <MJRefresh/MJRefresh.h>
+#import "WYBaseViewController.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "UIView+ITTAdditions.h"
+#import "UIView+LBExtension.h"
+#import "UIView+Additions.h"
+#import "UIView+WPFExtension.h"
+#import <ShareSDK/ShareSDK.h>
+#import "Config.h"
+#import "common.h"
+#import "WYWebViewController.h"
+#import "MXBADelegate.h"
+#import "cityDefault.h"
+#import "TZImagePickerController.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "WYAlertView.h"
+#import <WebKit/WebKit.h>
+#endif
+
+#define YZMsg(key) [[RookieTools shareInstance] getStringForKey:key withTable:@"InfoPlist"]
+#define CurrentLanguage @"will_show_language"
+#define getImagename(a) [NSString stringWithFormat:@"%@_%@",a,[Config canshu]]
+#define lagType [[NSUserDefaults standardUserDefaults] objectForKey:CurrentLanguage]
+
+#define ZH_CN @"zh-Hans"
+#define EN @"en"
+
+//域名
+#define purl @""
+#define h5url @""
+
+//三方
+//QQ
+#define QQAppKey @""
+#define QQAppId @""
+//wechat
+#define WechatAppId @""
+#define WechatAppSecret @""
+#define WechatUniversalLink @""
+#define WechatGH_Id @""
+
+//极光
+#define JMessageAppKey @""
+#define JmessageName @""
+
+//bugly
+#define BuglyId @""
+
+#define isMHSDK NO
+
+//腾讯直播鉴权URL+Key
+#define LicenceURL @""
+#define LicenceKey @""
+
+
+
+//适配iphoneX
+#define iPhoneX (_window_width== 375.f && _window_height == 812.f)||(_window_width== 414.f && _window_height == 896.f)
+#define ShowDiff (iPhoneX ? 34: 0)
+#define statusbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height-20)
+
+//获取手机系统版本
+#define SysVersion [[UIDevice currentDevice] systemVersion].floatValue
+
+
+//颜色16进制
+#define RGB_COLOR(_STR_,a) ([UIColor colorWithRed:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(1, 2)] UTF8String], 0, 16)] intValue] / 255.0 green:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(3, 2)] UTF8String], 0, 16)] intValue] / 255.0 blue:[[NSString stringWithFormat:@"%lu", strtoul([[_STR_ substringWithRange:NSMakeRange(5, 2)] UTF8String], 0, 16)] intValue] / 255.0 alpha:a])
+
+//app主色调s
+#define normalColors RGB_COLOR(@"#FF5121",1)
+
+//各种字体颜色
+#define color32 RGB_COLOR(@"#323232",1)
+#define color64 RGB_COLOR(@"#646464",1)
+#define colorCC RGB_COLOR(@"#cccccc",1)
+#define color96 RGB_COLOR(@"#969696",1)
+#define color99 RGB_COLOR(@"#999999",1)
+#define colorf0 RGB_COLOR(@"#f0f0f0",1)
+
+#define Line_Cor [UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]
+
+// 随机色
+#define YBRandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
+
+//系统字体
+#define SYS_Font(a) [UIFont systemFontOfSize:(a)]
+
+//屏幕宽高
+#define  _window_width  [UIScreen mainScreen].bounds.size.width
+#define _window_height [UIScreen mainScreen].bounds.size.height
+
+//各种手机5-6-6P
+#define SCREEN_MAX_LENGTH (MAX(_window_width, _window_height))
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+//获取weak对象
+#define WeakSelf __weak typeof(self) weakSelf = self;
+
+//转字符串
+#define  minstr(a) [NSString stringWithFormat:@"%@",a]
+//emoji规则
+#define emojiPattern @"\\[\\w+\\]"
+
+//通知
+#define WYCarNumChange @"carNumChange"//购物车商品数量改变的通知
+#define WYAlipayRsultttt @"alipayRsultttt"//支付宝支付结果通知
+#define WYWXApiPaySuccess @"wxapiPaySuccess"//微信支付成功的通知
+#define WYReceiveNewPushMessage @"receiveNewPushMessage"//收到新的推送消息的通知
+
+#define kNormalUser @"30" //普通用户
+#define kAnchorUser @"50" // 主播
+#define kAdminUser @"40" //管理员
+#define kSuperAdminUser @"60" //超管
+
+//去log
+#if 1
+#define NSLog(FORMAT, ...) fprintf(stderr,"[%s:%d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+
+#define NSLog(FORMAT, ...) nil
+
+#endif
+
+
+/// 判断NSString, NSArrsy, NSDictionary, NSSet, NSNumber
+#define IsString(__string) ([(__string) isKindOfClass:[NSString class]])
+#define IsStringWithAnyText(__string) (IsString(__string) && ([((NSString *)__string) length] > 0))
+
+#define IsArray(__array) ([(__array) isKindOfClass:[NSArray class]])
+#define IsArrayWithAnyItem(__array) (IsArray(__array) && ([((NSArray *)__array) count] > 0))
+
+#define IsDictionary(__dict) ([(__dict) isKindOfClass:[NSDictionary class]])
+#define IsDictionaryWithAnyKeyValue(__dict) (IsDictionary(__dict) && ([[((NSDictionary *)__dict) allKeys] count] > 0))
+
+#define IsNumber(__number) ([(__number) isKindOfClass:[NSNumber class]])
+
+#endif /* PrefixHeader_Playing_pch */

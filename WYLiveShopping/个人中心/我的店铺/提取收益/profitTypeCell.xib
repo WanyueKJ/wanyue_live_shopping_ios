@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="113" id="KGk-i7-Jjw" customClass="profitTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmQ-s3-IMZ">
+                        <rect key="frame" x="290" y="49" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="1jf-a9-hNl"/>
+                            <constraint firstAttribute="width" constant="15" id="YdH-6z-aj3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgU-eg-Kox">
+                        <rect key="frame" x="62.5" y="48" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0W-th-SAk">
+                        <rect key="frame" x="280" y="36.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="R0v-7f-TeH"/>
+                            <constraint firstAttribute="width" constant="40" id="ur3-Wz-Gwz"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                        <state key="normal" image="profit_del.png"/>
+                        <connections>
+                            <action selector="delateBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="33s-mX-2sS"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RuR-Fo-QgI">
+                        <rect key="frame" x="285" y="112" width="25" height="1"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.96078431372549022" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6p8-Hp-vix"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z4t-SH-oP5">
+                        <rect key="frame" x="15" y="37.5" width="37.5" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="z4t-SH-oP5" secondAttribute="height" multiplier="1:1" id="fdr-xX-rfn"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="o0W-th-SAk" firstAttribute="centerY" secondItem="XgU-eg-Kox" secondAttribute="centerY" id="2a1-Dn-3qg"/>
+                    <constraint firstAttribute="trailing" secondItem="o0W-th-SAk" secondAttribute="trailing" id="DBr-jM-z8b"/>
+                    <constraint firstItem="RuR-Fo-QgI" firstAttribute="trailing" secondItem="o0W-th-SAk" secondAttribute="trailing" constant="-10" id="EC4-s5-1eP"/>
+                    <constraint firstItem="gmQ-s3-IMZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Gbk-qd-42x"/>
+                    <constraint firstItem="XgU-eg-Kox" firstAttribute="leading" secondItem="z4t-SH-oP5" secondAttribute="trailing" constant="10" id="Jps-5a-bZD"/>
+                    <constraint firstItem="z4t-SH-oP5" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:3" id="Kmm-Cb-dA0"/>
+                    <constraint firstItem="z4t-SH-oP5" firstAttribute="centerY" secondItem="gmQ-s3-IMZ" secondAttribute="centerY" id="MDG-dT-o6I"/>
+                    <constraint firstItem="RuR-Fo-QgI" firstAttribute="leading" secondItem="gmQ-s3-IMZ" secondAttribute="leading" constant="-5" id="Za8-v3-op5"/>
+                    <constraint firstAttribute="trailing" secondItem="gmQ-s3-IMZ" secondAttribute="trailing" constant="15" id="gYj-nw-FWw"/>
+                    <constraint firstAttribute="bottom" secondItem="RuR-Fo-QgI" secondAttribute="bottom" id="hEs-Te-Lfd"/>
+                    <constraint firstItem="z4t-SH-oP5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="jmw-f6-Yrq"/>
+                    <constraint firstItem="XgU-eg-Kox" firstAttribute="centerY" secondItem="z4t-SH-oP5" secondAttribute="centerY" id="ohn-wA-uYs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameL" destination="XgU-eg-Kox" id="JgF-gm-r5K"/>
+                <outlet property="stateImgView" destination="gmQ-s3-IMZ" id="K9X-Se-DMP"/>
+                <outlet property="typeImgView" destination="z4t-SH-oP5" id="y1W-8i-H3A"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="144.3778110944528"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profit_del.png" width="16" height="16"/>
+    </resources>
+</document>

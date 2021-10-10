@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="classGoodsHHHCELL" id="gTV-IL-0wX" customClass="classGoodsHHHCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="44p-i2-KH1">
+                        <rect key="frame" x="15" y="15" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="b2h-zj-sai"/>
+                            <constraint firstAttribute="width" constant="90" id="tRA-t7-apH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Vw-kw-dko">
+                        <rect key="frame" x="120" y="18" width="219" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已售0件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G0-JB-yV6">
+                        <rect key="frame" x="294" y="88.5" width="45" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh1-NW-DQ8">
+                        <rect key="frame" x="15" y="119" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3hF-0G-4pk"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥88.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaU-Pf-MWq">
+                        <rect key="frame" x="120" y="87" width="51.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VIPidentifi.png" translatesAutoresizingMaskIntoConstraints="NO" id="LQY-2z-TPT">
+                        <rect key="frame" x="172.5" y="89.5" width="29" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="LQY-2z-TPT" secondAttribute="height" multiplier="23:10" id="G5n-Fu-1zB"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥88.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPr-wj-y0B">
+                        <rect key="frame" x="120" y="63.5" width="58" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kh1-NW-DQ8" secondAttribute="bottom" id="02s-oa-bFo"/>
+                <constraint firstAttribute="trailing" secondItem="8Vw-kw-dko" secondAttribute="trailing" constant="15" id="2Xj-jS-4i0"/>
+                <constraint firstItem="8Vw-kw-dko" firstAttribute="top" secondItem="44p-i2-KH1" secondAttribute="top" constant="3" id="3IP-Oh-qjt"/>
+                <constraint firstItem="GaU-Pf-MWq" firstAttribute="bottom" secondItem="44p-i2-KH1" secondAttribute="bottom" id="8ej-Dq-BrO"/>
+                <constraint firstItem="LQY-2z-TPT" firstAttribute="centerY" secondItem="GaU-Pf-MWq" secondAttribute="centerY" id="9A9-74-cYG"/>
+                <constraint firstItem="8Vw-kw-dko" firstAttribute="leading" secondItem="44p-i2-KH1" secondAttribute="trailing" constant="15" id="FGe-Q4-6I6"/>
+                <constraint firstItem="GaU-Pf-MWq" firstAttribute="top" secondItem="XPr-wj-y0B" secondAttribute="bottom" constant="3" id="Fqg-Dw-ub6"/>
+                <constraint firstItem="LQY-2z-TPT" firstAttribute="width" secondItem="LQY-2z-TPT" secondAttribute="height" multiplier="23:10" id="M4R-by-OTU"/>
+                <constraint firstItem="Kh1-NW-DQ8" firstAttribute="leading" secondItem="44p-i2-KH1" secondAttribute="leading" id="QLx-yw-TGH"/>
+                <constraint firstItem="LQY-2z-TPT" firstAttribute="height" secondItem="GaU-Pf-MWq" secondAttribute="height" multiplier="0.7" id="TYJ-V8-fo2"/>
+                <constraint firstItem="LQY-2z-TPT" firstAttribute="leading" secondItem="GaU-Pf-MWq" secondAttribute="trailing" constant="1" id="Xt8-mJ-Agp"/>
+                <constraint firstItem="Kh1-NW-DQ8" firstAttribute="trailing" secondItem="8Vw-kw-dko" secondAttribute="trailing" id="Zn1-dj-JEd"/>
+                <constraint firstItem="6G0-JB-yV6" firstAttribute="trailing" secondItem="8Vw-kw-dko" secondAttribute="trailing" id="aUl-ce-hiN"/>
+                <constraint firstItem="44p-i2-KH1" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="cea-Ih-t6b"/>
+                <constraint firstItem="GaU-Pf-MWq" firstAttribute="leading" secondItem="8Vw-kw-dko" secondAttribute="leading" id="cfs-4F-6dI"/>
+                <constraint firstItem="6G0-JB-yV6" firstAttribute="bottom" secondItem="GaU-Pf-MWq" secondAttribute="bottom" constant="-2" id="fDI-uX-b02"/>
+                <constraint firstItem="XPr-wj-y0B" firstAttribute="leading" secondItem="8Vw-kw-dko" secondAttribute="leading" id="g64-ln-2BQ"/>
+                <constraint firstItem="44p-i2-KH1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="lak-8N-0AA"/>
+            </constraints>
+            <size key="customSize" width="354" height="120"/>
+            <connections>
+                <outlet property="priceL" destination="XPr-wj-y0B" id="yrf-8G-zcf"/>
+                <outlet property="salesL" destination="6G0-JB-yV6" id="Mpn-zD-iE7"/>
+                <outlet property="thumbImgV" destination="44p-i2-KH1" id="phe-oW-jad"/>
+                <outlet property="titleL" destination="8Vw-kw-dko" id="MCc-Np-J2n"/>
+                <outlet property="vipImgV" destination="LQY-2z-TPT" id="XeE-3Z-M0L"/>
+                <outlet property="vipPriceL" destination="GaU-Pf-MWq" id="GAT-Su-oKl"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="121.875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="VIPidentifi.png" width="23" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="63" id="mOd-IT-CIJ" customClass="adminCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mOd-IT-CIJ" id="iSL-1f-1TE">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDV-cP-N6E" userLabel="头像">
+                        <rect key="frame" x="18" y="11.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="lDV-cP-N6E" secondAttribute="height" multiplier="1:1" id="dEN-Wf-qJd"/>
+                            <constraint firstAttribute="height" constant="40" id="dZa-mW-2UZ"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真由理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIc-Cb-hQ3" userLabel="昵称">
+                        <rect key="frame" x="61" y="23" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92l-fe-B08">
+                        <rect key="frame" x="255" y="11.5" width="55" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="JNe-JM-U9G"/>
+                            <constraint firstAttribute="width" constant="55" id="WY4-4b-Zdr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" image="profit_del.png">
+                            <color key="titleColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="delateBtnClick:" destination="mOd-IT-CIJ" eventType="touchUpInside" id="GAt-zJ-aMH"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTb-Xz-c5W">
+                        <rect key="frame" x="15" y="62" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Dia-Zi-Qna"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FIc-Cb-hQ3" firstAttribute="centerY" secondItem="lDV-cP-N6E" secondAttribute="centerY" id="4Ku-Sk-36R"/>
+                    <constraint firstItem="92l-fe-B08" firstAttribute="top" secondItem="lDV-cP-N6E" secondAttribute="top" id="5eS-yA-LuF"/>
+                    <constraint firstItem="lDV-cP-N6E" firstAttribute="centerY" secondItem="iSL-1f-1TE" secondAttribute="centerY" id="5kX-2l-cqZ"/>
+                    <constraint firstAttribute="trailing" secondItem="YTb-Xz-c5W" secondAttribute="trailing" constant="15" id="9Tz-mM-9wa"/>
+                    <constraint firstItem="FIc-Cb-hQ3" firstAttribute="leading" secondItem="lDV-cP-N6E" secondAttribute="trailing" constant="3" id="Ihj-tB-fNG"/>
+                    <constraint firstAttribute="trailing" secondItem="92l-fe-B08" secondAttribute="trailing" constant="10" id="MHK-YJ-z7z"/>
+                    <constraint firstItem="lDV-cP-N6E" firstAttribute="leading" secondItem="iSL-1f-1TE" secondAttribute="leadingMargin" constant="3" id="VMe-Sk-CWV"/>
+                    <constraint firstAttribute="bottom" secondItem="YTb-Xz-c5W" secondAttribute="bottom" id="dvg-Xg-L5V"/>
+                    <constraint firstItem="lDV-cP-N6E" firstAttribute="height" secondItem="iSL-1f-1TE" secondAttribute="height" multiplier="4:5" id="oUv-4j-crT"/>
+                    <constraint firstItem="YTb-Xz-c5W" firstAttribute="leading" secondItem="iSL-1f-1TE" secondAttribute="leading" constant="15" id="s0f-oF-lqC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="oUv-4j-crT"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconBTN" destination="lDV-cP-N6E" id="FDM-7g-N8o"/>
+                <outlet property="nameL" destination="FIc-Cb-hQ3" id="baG-7T-YnD"/>
+                <outlet property="rightBtn" destination="92l-fe-B08" id="yse-Gm-7pX"/>
+            </connections>
+            <point key="canvasLocation" x="209.59999999999999" y="211.84407796101951"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profit_del.png" width="16" height="16"/>
+    </resources>
+</document>

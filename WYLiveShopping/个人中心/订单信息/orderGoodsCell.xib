@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="orderGoodsCELL" rowHeight="96" id="KGk-i7-Jjw" customClass="orderGoodsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="但是似懂非懂说分手的分手是啥地方发生的分手的分手的分手的" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAl-Yl-fa7">
+                        <rect key="frame" x="85" y="23" width="146" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="¥ 999.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTb-wp-PoD">
+                        <rect key="frame" x="253" y="23" width="52" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hvb-8l-f1G">
+                        <rect key="frame" x="15" y="18" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.20392156859999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="R9S-uM-ydZ"/>
+                            <constraint firstAttribute="width" constant="60" id="mVk-ht-Fp6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zct-RB-xG4">
+                        <rect key="frame" x="293" y="43" width="12" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hvb-8l-f1G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6h6-Dl-35J"/>
+                    <constraint firstItem="TTb-wp-PoD" firstAttribute="top" secondItem="tAl-Yl-fa7" secondAttribute="top" id="Huz-Nh-i4N"/>
+                    <constraint firstItem="zct-RB-xG4" firstAttribute="top" secondItem="TTb-wp-PoD" secondAttribute="bottom" constant="5.5" id="PIw-JP-2rx"/>
+                    <constraint firstItem="tAl-Yl-fa7" firstAttribute="leading" secondItem="Hvb-8l-f1G" secondAttribute="trailing" constant="10" id="TUx-rN-d1k"/>
+                    <constraint firstAttribute="trailing" secondItem="TTb-wp-PoD" secondAttribute="trailing" constant="15" id="VBy-MA-QAG"/>
+                    <constraint firstItem="zct-RB-xG4" firstAttribute="trailing" secondItem="TTb-wp-PoD" secondAttribute="trailing" id="Vrw-D2-nyd"/>
+                    <constraint firstItem="Hvb-8l-f1G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="XeP-6B-r1p"/>
+                    <constraint firstItem="tAl-Yl-fa7" firstAttribute="top" secondItem="Hvb-8l-f1G" secondAttribute="top" constant="5" id="YsR-Nc-xAT"/>
+                    <constraint firstItem="TTb-wp-PoD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tAl-Yl-fa7" secondAttribute="trailing" constant="10" id="x3F-0N-Lj5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameL" destination="tAl-Yl-fa7" id="zoK-pI-pWT"/>
+                <outlet property="numsL" destination="zct-RB-xG4" id="UMh-lo-m6n"/>
+                <outlet property="thumbImgView" destination="Hvb-8l-f1G" id="xfF-6u-8Re"/>
+                <outlet property="unitPriceL" destination="TTb-wp-PoD" id="jaG-Vv-mmv"/>
+            </connections>
+            <point key="canvasLocation" x="107" y="16"/>
+        </tableViewCell>
+    </objects>
+</document>

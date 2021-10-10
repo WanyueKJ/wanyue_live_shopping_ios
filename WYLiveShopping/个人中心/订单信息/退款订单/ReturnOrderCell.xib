@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReturnOrderCELL" rowHeight="119" id="KGk-i7-Jjw" customClass="ReturnOrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tlg-In-5wf">
+                        <rect key="frame" x="15" y="29.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4Aw-R0-FQO"/>
+                            <constraint firstAttribute="width" secondItem="tlg-In-5wf" secondAttribute="height" multiplier="1:1" id="t4r-YK-3At"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-Sw-1Xw">
+                        <rect key="frame" x="85" y="31.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCd-T4-pQq">
+                        <rect key="frame" x="85" y="52.5" width="37.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 88.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcJ-5O-JMY">
+                        <rect key="frame" x="85" y="72.5" width="51" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-jb-yS8">
+                        <rect key="frame" x="291" y="32" width="14" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bOz-jb-yS8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cSu-Sw-1Xw" secondAttribute="trailing" constant="5" id="03u-e9-1Ec"/>
+                    <constraint firstItem="cSu-Sw-1Xw" firstAttribute="leading" secondItem="tlg-In-5wf" secondAttribute="trailing" constant="10" id="0a8-MY-YlU"/>
+                    <constraint firstAttribute="trailing" secondItem="bOz-jb-yS8" secondAttribute="trailing" constant="15" id="3kW-dq-6cs"/>
+                    <constraint firstItem="KcJ-5O-JMY" firstAttribute="bottom" secondItem="tlg-In-5wf" secondAttribute="bottom" id="4Ui-bt-qP8"/>
+                    <constraint firstItem="iCd-T4-pQq" firstAttribute="centerY" secondItem="tlg-In-5wf" secondAttribute="centerY" id="7sF-ew-FSy"/>
+                    <constraint firstItem="iCd-T4-pQq" firstAttribute="trailing" secondItem="cSu-Sw-1Xw" secondAttribute="trailing" id="8GH-dw-oyf"/>
+                    <constraint firstItem="tlg-In-5wf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="AVF-gt-EPS"/>
+                    <constraint firstItem="cSu-Sw-1Xw" firstAttribute="top" secondItem="tlg-In-5wf" secondAttribute="top" constant="2" id="EDV-Dv-eZV"/>
+                    <constraint firstItem="iCd-T4-pQq" firstAttribute="leading" secondItem="cSu-Sw-1Xw" secondAttribute="leading" id="FNS-zD-OeT"/>
+                    <constraint firstItem="bOz-jb-yS8" firstAttribute="centerY" secondItem="cSu-Sw-1Xw" secondAttribute="centerY" id="SUK-Tx-HnD"/>
+                    <constraint firstItem="KcJ-5O-JMY" firstAttribute="leading" secondItem="cSu-Sw-1Xw" secondAttribute="leading" id="ZNX-8Y-M3w"/>
+                    <constraint firstItem="tlg-In-5wf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uq1-HD-KgH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameL" destination="cSu-Sw-1Xw" id="YGC-oo-4zl"/>
+                <outlet property="numsL" destination="bOz-jb-yS8" id="AFe-hj-qjZ"/>
+                <outlet property="priceL" destination="KcJ-5O-JMY" id="VHo-Aa-4ls"/>
+                <outlet property="sukL" destination="iCd-T4-pQq" id="MIi-nS-Htv"/>
+                <outlet property="thumbImgView" destination="tlg-In-5wf" id="O0a-iO-5hi"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>

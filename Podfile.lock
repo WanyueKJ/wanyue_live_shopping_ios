@@ -1,0 +1,172 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AliPay (15.7.4.2)
+  - Bugly (2.4.8)
+  - CWStatusBarNotification (2.3.5)
+  - EBBannerView (1.1.2)
+  - FLAnimatedImage (1.0.12)
+  - HPGrowingTextView (1.1)
+  - IQKeyboardManager (6.5.5)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.4.3)
+  - mob_sharesdk (4.4.2):
+    - mob_sharesdk/ShareSDK (= 4.4.2)
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDK (4.4.2):
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/Apple (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull (4.4.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation (>= 3.2.9)
+  - MOBFoundation (3.2.27)
+  - OpenSSL-for-iOS (1.0.2.d.1)
+  - Protobuf (3.12.0)
+  - Qiniu (7.3.5)
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/GIF (4.4.8):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - SSZipArchive (2.2.3)
+  - Starscream (3.1.1)
+  - SVGAPlayer (2.5.4):
+    - SVGAPlayer/Core (= 2.5.4)
+    - SVGAPlayer/ProtoFiles (= 2.5.4)
+  - SVGAPlayer/Core (2.5.4):
+    - SSZipArchive (>= 1.8.1)
+    - SVGAPlayer/ProtoFiles
+  - SVGAPlayer/ProtoFiles (2.5.4):
+    - Protobuf (~> 3.4)
+  - TXLiteAVSDK_Smart (6.7.7758)
+  - TYPagerController (2.1.2)
+  - TZImagePickerController (3.3.2)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - AFNetworking
+  - AliPay
+  - Bugly (~> 2.4.6)
+  - CWStatusBarNotification
+  - EBBannerView
+  - FLAnimatedImage
+  - HPGrowingTextView
+  - IQKeyboardManager
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/Apple
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/WeChatFull
+  - OpenSSL-for-iOS (~> 1.0.2.d.1)
+  - Qiniu
+  - SDCycleScrollView
+  - SDWebImage
+  - SDWebImage/GIF
+  - Socket.IO-Client-Swift
+  - SSZipArchive
+  - SVGAPlayer
+  - TXLiteAVSDK_Smart (~> 6.7.7754)
+  - TYPagerController
+  - TZImagePickerController
+  - YYWebImage
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AliPay
+    - Bugly
+    - CWStatusBarNotification
+    - EBBannerView
+    - FLAnimatedImage
+    - HPGrowingTextView
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - mob_sharesdk
+    - MOBFoundation
+    - OpenSSL-for-iOS
+    - Protobuf
+    - Qiniu
+    - SDCycleScrollView
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - SSZipArchive
+    - Starscream
+    - SVGAPlayer
+    - TXLiteAVSDK_Smart
+    - TYPagerController
+    - TZImagePickerController
+    - YYCache
+    - YYImage
+    - YYWebImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AliPay: ae0d58ea9a464a8b56396e3c3987574fe727a714
+  Bugly: da3c02408c14838d498429320545a8e439392978
+  CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
+  EBBannerView: 268002f8d9d3e979cb8649cbfefd0da5ddef72b3
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  mob_sharesdk: a60006891a079486ff3269ed326adfa05a967c01
+  MOBFoundation: efdc3ce6b843fbc10ae8c1c6122a02b0d845b39b
+  OpenSSL-for-iOS: d7a30add88a1969b052135adbe48452af231ed32
+  Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
+  Qiniu: 9d20cbf08a3bcf9d01869626f3c2a23a1b842f65
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SVGAPlayer: ca9c869316b468d995994c7fe82b9bd8645a0787
+  TXLiteAVSDK_Smart: 0c7fe4e44015074e268b31597963a562706b2344
+  TYPagerController: 262556ecef99986d26ed77fb1288a198ed42f4af
+  TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 0e7a79858f291ca4abf720752f1a710cc4f53267
+
+COCOAPODS: 1.8.4

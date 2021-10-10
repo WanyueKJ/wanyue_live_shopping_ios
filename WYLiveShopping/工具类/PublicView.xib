@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.25" contentMode="scaleToFill" id="iN0-l3-epB" userLabel="系统加载旋转轮" customClass="PublicView">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="237"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="I62-f6-FvX">
+                    <rect key="frame" x="170.5" y="79" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="I62-f6-FvX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bjl-MI-QjX"/>
+                <constraint firstItem="I62-f6-FvX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.75" id="Zg3-fD-lP9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="indictorV" destination="I62-f6-FvX" id="BvN-zV-RC8"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="57"/>
+        </view>
+        <view contentMode="scaleToFill" id="QFI-DL-XNv" userLabel="空数据（图+文字）" customClass="PublicView">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_fans.png" translatesAutoresizingMaskIntoConstraints="NO" id="uKj-1x-0vf" userLabel="图片">
+                    <rect key="frame" x="83.5" y="48" width="180" height="180"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGE-tm-mIC" userLabel="文字说明">
+                    <rect key="frame" x="0.0" y="228" width="347" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="zo1-F9-muD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MGE-tm-mIC" firstAttribute="centerX" secondItem="QFI-DL-XNv" secondAttribute="centerX" id="AaH-hr-OGX"/>
+                <constraint firstItem="MGE-tm-mIC" firstAttribute="width" secondItem="QFI-DL-XNv" secondAttribute="width" id="MWz-c4-Mmw"/>
+                <constraint firstItem="uKj-1x-0vf" firstAttribute="centerX" secondItem="QFI-DL-XNv" secondAttribute="centerX" id="Xcc-It-XEx"/>
+                <constraint firstItem="uKj-1x-0vf" firstAttribute="centerY" secondItem="QFI-DL-XNv" secondAttribute="centerY" multiplier="0.8" id="gmz-9M-yTP"/>
+                <constraint firstItem="MGE-tm-mIC" firstAttribute="top" secondItem="uKj-1x-0vf" secondAttribute="bottom" id="zO5-lv-6n1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noDataIV" destination="uKj-1x-0vf" id="0Lj-Ce-yS4"/>
+                <outlet property="noDataTextL" destination="MGE-tm-mIC" id="tWa-82-ZPy"/>
+            </connections>
+            <point key="canvasLocation" x="67.5" y="506.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="rQL-SA-BbU" userLabel="空数据（文字）" customClass="PublicView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="398"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksy-ND-SZr" userLabel="文字1">
+                    <rect key="frame" x="0.0" y="69.5" width="364" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="2wT-Hq-6Sa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dom-tU-EAp" userLabel="文字2">
+                    <rect key="frame" x="0.0" y="99.5" width="364" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dom-tU-EAp" firstAttribute="height" secondItem="ksy-ND-SZr" secondAttribute="height" id="0DK-T7-VC2"/>
+                <constraint firstItem="dom-tU-EAp" firstAttribute="centerX" secondItem="ksy-ND-SZr" secondAttribute="centerX" id="8B3-vQ-GTB"/>
+                <constraint firstItem="ksy-ND-SZr" firstAttribute="centerX" secondItem="rQL-SA-BbU" secondAttribute="centerX" id="B9O-WS-b0m"/>
+                <constraint firstItem="ksy-ND-SZr" firstAttribute="width" secondItem="rQL-SA-BbU" secondAttribute="width" id="T0V-Yr-hLU"/>
+                <constraint firstItem="dom-tU-EAp" firstAttribute="width" secondItem="ksy-ND-SZr" secondAttribute="width" id="enu-kq-2lw"/>
+                <constraint firstItem="ksy-ND-SZr" firstAttribute="centerY" secondItem="rQL-SA-BbU" secondAttribute="centerY" multiplier="0.4" id="ght-ff-Qp6"/>
+                <constraint firstItem="dom-tU-EAp" firstAttribute="top" secondItem="ksy-ND-SZr" secondAttribute="bottom" constant="10" id="xwY-Ln-5Et"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noDataText1" destination="ksy-ND-SZr" id="Wci-C9-J9V"/>
+                <outlet property="noDataText2" destination="dom-tU-EAp" id="OBd-Vb-iKP"/>
+            </connections>
+            <point key="canvasLocation" x="76" y="1091"/>
+        </view>
+        <view contentMode="scaleToFill" id="pdU-yJ-o9Q" userLabel="评论加载中" customClass="PublicView">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="355"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论加载中" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="an6-5g-qSc" userLabel="评论加载中">
+                    <rect key="frame" x="153.5" y="167.5" width="77" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="tQf-UJ-ev1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="hU4-oa-HLs">
+                    <rect key="frame" x="130.5" y="167.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="an6-5g-qSc" firstAttribute="centerY" secondItem="pdU-yJ-o9Q" secondAttribute="centerY" id="0nb-YE-3Yf"/>
+                <constraint firstItem="hU4-oa-HLs" firstAttribute="trailing" secondItem="an6-5g-qSc" secondAttribute="leading" constant="-3" id="8dy-Ld-MtS"/>
+                <constraint firstItem="hU4-oa-HLs" firstAttribute="centerY" secondItem="an6-5g-qSc" secondAttribute="centerY" id="Y9K-Z5-4GZ"/>
+                <constraint firstItem="an6-5g-qSc" firstAttribute="centerX" secondItem="pdU-yJ-o9Q" secondAttribute="centerX" constant="10" id="oqO-uX-yOA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="76" y="1741.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="UJL-Tp-3gc" userLabel="个人中心(无作品)底部gif图" customClass="PublicView">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHO-ts-BWv">
+                    <rect key="frame" x="129.5" y="311" width="150" height="123"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ICX-cM-Tex"/>
+                        <constraint firstAttribute="width" secondItem="aHO-ts-BWv" secondAttribute="height" multiplier="224:184" id="IQe-Uh-HPb"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aHO-ts-BWv" firstAttribute="centerX" secondItem="UJL-Tp-3gc" secondAttribute="centerX" id="1tC-UU-Y2j"/>
+                <constraint firstAttribute="bottom" secondItem="aHO-ts-BWv" secondAttribute="bottom" id="l8I-3e-CE8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gifIV" destination="aHO-ts-BWv" id="39q-ad-VMd"/>
+            </connections>
+            <point key="canvasLocation" x="86.5" y="2330"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty_fans.png" width="180" height="180"/>
+    </resources>
+</document>
