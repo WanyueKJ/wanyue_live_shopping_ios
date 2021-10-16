@@ -26,9 +26,7 @@
     // Override point for customization after application launch.
     [IQKeyboardManager sharedManager].enable = YES;
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
-    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;
-//    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"isStartCall"];
-    
+    [IQKeyboardManager sharedManager].enableAutoToolbar = NO;    
     [Bugly startWithAppId:BuglyId];
     
     [self thirdPlant];
