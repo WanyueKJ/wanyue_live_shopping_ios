@@ -18,7 +18,6 @@ target 'WYLiveShopping' do
     #pod 'mob_sharesdk/ShareSDKPlatforms/WeChat'   #（微信sdk不带支付的命令）
     pod 'mob_sharesdk/ShareSDKPlatforms/WeChatFull' #（微信sdk带支付的命令，和上面不带支付的不能共存，只能选择一个）
     pod 'mob_sharesdk/ShareSDKPlatforms/Apple'
-
 #   支付宝
     pod 'AliPay'
     pod 'OpenSSL-for-iOS', '~> 1.0.2.d.1'
