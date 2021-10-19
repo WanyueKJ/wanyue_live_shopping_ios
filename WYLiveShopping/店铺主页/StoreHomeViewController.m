@@ -33,7 +33,6 @@
     }];
 }
 - (void)dokefu{
-//    [MBProgressHUD showError:@"敬请期待"];
     if (kefuUrlString.length > 6) {
         WYWebViewController *web = [[WYWebViewController alloc] init];
         web.urls = kefuUrlString;
