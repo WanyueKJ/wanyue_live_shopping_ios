@@ -206,11 +206,9 @@
         }
         else if (EvtID == PLAY_EVT_PLAY_BEGIN){
             NSLog(@"moviplay不连麦视频播放开始");
-//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             dispatch_async(dispatch_get_main_queue(), ^{
                 _thumbImgView.hidden = YES;
             });
-//            });
         }
         else if (EvtID== PLAY_WARNING_VIDEO_PLAY_LAG){
             NSLog(@"moviplay不连麦当前视频播放出现卡顿（用户直观感受）");
