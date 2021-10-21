@@ -471,7 +471,6 @@
 - (void)delateCartGoodsForID:(NSString *)ids andIsValid:(BOOL)isValid{
     [WYToolClass postNetworkWithUrl:@"cart/del" andParameter:@{@"ids":ids} success:^(int code, id  _Nonnull info, NSString * _Nonnull msg) {
         if (code == 200) {
-//            [MBProgressHUD showError:msg];
             if (isValid) {
                 [self requestData];
                 _carBottomV.allBtn.selected = YES;
