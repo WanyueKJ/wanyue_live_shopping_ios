@@ -134,14 +134,6 @@
                 
             }else{
                 if ([payTypeStr isEqual:@"weixin"]) {
-//                    [MBProgressHUD hideHUD];
-//                    [[NSNotificationCenter defaultCenter] removeObserver:self];
-//                    PaySucessViewController*vc = [[PaySucessViewController alloc]init];
-//                    vc.orderID = orderID;
-//                    vc.failReason = @"微信支付未接入";
-//                    vc.liveUid = _liveUid;
-//                    [[MXBADelegate sharedAppDelegate] pushViewController:vc animated:YES];
-
                     NSDictionary *jsConfig = [result valueForKey:@"jsConfig"];
                     [WXApi registerApp:minstr([jsConfig valueForKey:@"appid"]) universalLink:WechatUniversalLink];
                     //调起微信支付
