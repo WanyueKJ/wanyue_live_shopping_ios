@@ -10,13 +10,6 @@
 
 @implementation carBottomView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 - (IBAction)allBtnClick:(id)sender {
     _allBtn.selected = !_allBtn.selected;
     if (self.block) {
