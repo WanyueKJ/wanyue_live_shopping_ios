@@ -17,13 +17,6 @@
 //对按钮的一些基本设置
 - (void)setUpPathButton:(MXtabbar *)pathButton {
     pathButton.delegate = self;
-//    pathButton.bloomRadius = self.bloomRadius;
-//    pathButton.allowCenterButtonRotation = self.allowCenterButtonRotation;
-//    pathButton.bottomViewColor = [UIColor clearColor];
-//    pathButton.bloomDirection = kMXtabbarBloomDirectionTop;
-//    pathButton.basicDuration = self.basicDuration;
-//    pathButton.bloomAngel = self.bloomAngel;
-//    pathButton.allowSounds = NO;
 }
 - (void)drawRect:(CGRect)rect {
     if (!self.plusBtn) {
