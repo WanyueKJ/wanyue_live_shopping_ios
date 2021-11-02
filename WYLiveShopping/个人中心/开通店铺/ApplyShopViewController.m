@@ -34,8 +34,6 @@
     [super viewDidLoad];
     self.titleL.text = @"开通店铺";
     [self requestData];
-    
-    
 }
 - (void)requestData{
     [WYToolClass getQCloudWithUrl:@"shopstatus" Suc:^(int code, id  _Nonnull info, NSString * _Nonnull msg) {
