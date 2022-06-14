@@ -52,6 +52,7 @@ Based on ThinkPhp6.0+ios native development of a set of Wanyue live mall system,
     <div style="float:left;">
         <p>QQ：2770722087</p>
         <p>QQ群：995910672</p>
+        <p>QQ群：681418688</p>
     </div>
 </div>
 <a target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=JShAyXeoKqg2lWFEUSElxELImhjeMG4y&jump_from=webapi"><img border="0" src="https://images.gitee.com/uploads/images/2021/0317/100424_072ee536_8543696.png" alt="万岳在线教育讨论群" title="万岳在线教育讨论群"></a> 可加
