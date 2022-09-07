@@ -1,5 +1,6 @@
 <div align=center><img src="https://images.gitee.com/uploads/images/2021/0929/144611_f359aba0_8162876.png" width="590" height="212"/></div>
 
+
 ### Project description (if useful to you, please give a star!)
 ### 项目说明（如果对你有用，请给个star！请点击上方按钮，查看“部署文档”进行部署）
 ##### <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Project documentation</a> |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Deployment document</a>  |  <a target="_blank" href="https://www.kancloud.cn/wanyuekaiyuan11/wanyue_zhibo_ios/2789011">Q&A</a> 
@@ -11,6 +12,7 @@
 - Merchant background Address: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> Account：15711449029 Verification code：123456(Click to obtain the verification code and enter the verification code)
 
 ### Android version demo address (can jump directly to view)
+###获取最新版代码，请点击下方链接
    - The gitee address: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">Click here to</a>
 ![输入图片说明](https://gitee.com/WanYueKeJi/wanyue_zhibo_ios/raw/master/zhibo_demo.png "www.sdwanyue.com")
 ### Project introduction
