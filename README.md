@@ -12,7 +12,8 @@
 - Merchant background Address: <a target="_blank" href="https://malldemo.sdwanyue.com/shop/index">https://malldemo.sdwanyue.com/shop/index</a> Account：15711449029 Verification code：123456(Click to obtain the verification code and enter the verification code)
 
 ### Android version demo address (can jump directly to view)
-###获取最新版代码，请点击下方链接
+### 受平台文件大小限制，获取最新版代码，请点击下方链接
+### Subject to platform file size, please click the link in the description for the latest version of the code
    - The gitee address: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">Click here to</a>
 ![输入图片说明](https://gitee.com/WanYueKeJi/wanyue_zhibo_ios/raw/master/zhibo_demo.png "www.sdwanyue.com")
 ### Project introduction
