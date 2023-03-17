@@ -17,7 +17,7 @@ Limited by the size of the platform file, please click the Gitee link below to d
 
 ### Android version demo address (can jump directly to view)
    - The gitee address: <a target="_blank" href="https://gitee.com/WanYueKeJi/wanyue_zhibo_android">Click here to</a>
-![输入图片说明](https://gitee.com/WanYueKeJi/wanyue_zhibo_ios/raw/master/zhibo_demo.png "www.sdwanyue.com")
+![输入图片说明](https://gitee.com/WanYueKeJi/wanyue_zhibo_ios/raw/master/zhibo_demo20230317.png "www.sdwanyue.com")
 ### Project introduction
 Wanyue Technology can quickly build a set of its own live mall system for merchants, effectively avoid the pain points and difficulties in the process of live mall. While adding its own creativity, it absorbs the features and experiences of various platforms, and can make customized development of the system according to the operation needs of users.
 * All frameworks or components used are based on open source projects and the code is guaranteed to be 100% open source.
